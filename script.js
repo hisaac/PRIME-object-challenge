@@ -1,12 +1,12 @@
 var locations = []; // this array will hold your objects
 
 // object constructor
-function State(state, revenue, locationCount){
+function State(state, rev, locations){
   this.state = state;
-  this.revenue = revenue;
-  this.locationCount = locationCount;
+  this.revenue = rev;
+  this.locationCount = locations;
   this.averageRevenue = function(){
-    var avg = revenue / locationCount;
+    var avg = this.revenue / this.locationCount;
     return avg;
   }
 }
